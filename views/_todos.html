@@ -1,6 +1,6 @@
 <div ng-controller="TodosController as vm">
-    <ul ng-repeat="todo in vm.todos">
-        <li>{{todo.description}}</li>
+    <ul>
+        <li ng-repeat="todo in vm.todos">{{todo.description}}</li>
     </ul>
 </div>
 <script src="javascripts/todos/todos.controller.js"></script>

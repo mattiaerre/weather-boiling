@@ -1,0 +1,8 @@
+<div ng-controller="MarathonsController as vm">
+    <ul>
+        <li ng-repeat="marathon in vm.marathons" ng-class="{'green': marathon.future, 'red': !marathon.future}">{{marathon.id}} - {{marathon.fromNow}}</li>
+    </ul>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+<script src="javascripts/moment.min.js"></script>
+<script src="javascripts/marathons/marathons.controller.js"></script>
