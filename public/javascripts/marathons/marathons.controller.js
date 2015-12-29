@@ -11,7 +11,7 @@ function MarathonsController($http, _, moment) {
         _.each(response.data, function (item) {
             var when = moment(item.when, 'DD/MM/YYYY');
             // mapping
-            marathons.push({ id: item.id, fromNow: when.fromNow(), unix: when.unix(), future: when.isAfter(moment()) });
+            marathons.push({ id: item.id, fromNow: when.fromNow(), unix: when.unix(), future: when.isAfter(moment()), format: when.format('dddd, MMMM Do YYYY') });
         });
 
         // sorting
