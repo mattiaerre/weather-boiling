@@ -1,7 +1,12 @@
 <div ng-controller="MarathonsController as vm">
     <ul>
-        <li ng-repeat="marathon in vm.marathons" ng-class="{'green': marathon.future, 'red': !marathon.future}">{{marathon.id}} - {{marathon.fromNow}} - {{marathon.format}}</li>
+        <li ng-repeat="marathon in vm.marathons" ng-class="{'green': marathon.future, 'red': !marathon.future}" ng-click="vm.getWeather(marathon)">{{marathon.id}} - {{marathon.fromNow}} - {{marathon.format}}</li>
     </ul>
+    <div ng-if="vm.weather">
+        {{vm.weather.city}} {{vm.weather.description}}
+        <img src="http://openweathermap.org/img/w/{{vm.weather.icon}}.png" alt="{{vm.weather.icon}}" style="vertical-align: middle;">
+        {{vm.weather.temp}}&deg;C
+    </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
 <script src="javascripts/moment.min.js"></script>
