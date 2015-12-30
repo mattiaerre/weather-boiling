@@ -1,4 +1,4 @@
-function MarathonsController($http, _, moment) {
+function MarathonsController($http, _, moment, $log) {
     'use strict';
 
     var vm = this;
@@ -17,11 +17,11 @@ function MarathonsController($http, _, moment) {
         // sorting
         vm.marathons = _.sortByOrder(marathons, ['unix'], ['desc']);
 
-        console.dir(vm.marathons);
+        $log.log(vm.marathons);
     }
 
     function errorCallback(response) {
-        console.log('error');
-        console.dir(response);
+        $log.log('error');
+        $log.log(response);
     }
 }
