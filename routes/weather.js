@@ -1,15 +1,14 @@
 var express = require('express');
 var http = require('http');
-
 var router = express.Router();
+
+var apiKey = process.env.OPENWEATHERMAPORG_APIKEY;
 
 router.get('/', function (req, res, next) {
     getWeather(req.query.q, function (weather) {
         res.send({ weather: weather });
     }); // info: not sure about this
 });
-
-var apiKey = process.env.OPENWEATHERMAPORG_APIKEY;
 
 function getWeather(q, callback) {
     return http.get({
