@@ -1,5 +1,5 @@
-<div ng-controller="PaceCalculatorController as vm">
-    <div>
+<div class="row" ng-controller="PaceCalculatorController as vm">
+    <div class="col-md-12">
         <input type="number" min="2" max="10" step="1" ng-model="vm.minutes" ng-change="vm.toKph()">:
         <input type="number" type="number" min="0" max="59" step="1" ng-model="vm.seconds" ng-change="vm.toKph()">
         min/km
