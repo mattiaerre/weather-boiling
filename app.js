@@ -8,6 +8,7 @@ require('dotenv').load();
 
 var routes = require('./routes/index');
 var marathons = require('./routes/marathons');
+var paceCalculator = require('./routes/pace-calculator');
 var twitter = require('./routes/twitter');
 var weather = require('./routes/weather');
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/marathons', marathons);
+app.use('/pace-calculator', paceCalculator);
 app.use('/twitter', twitter);
 app.use('/weather', weather);
 

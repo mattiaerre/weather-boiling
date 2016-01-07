@@ -8,7 +8,7 @@ function MarathonsController($http, _, moment, $log) {
     $http.get('/marathons').then(function successCallback(response) {
         var marathons = [];
 
-        _.each(response.data, function (item) {
+        _.each(response.data, function (item) { // todo: name this function
             var when = moment(item.when, 'DD/MM/YYYY');
             // mapping
             marathons.push({

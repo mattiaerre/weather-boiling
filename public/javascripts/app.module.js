@@ -9,5 +9,5 @@
     MarathonsController.$inject = ['$http', '_', 'moment', '$log'];
 
     angular.module(appName).controller('PaceCalculatorController', PaceCalculatorController);
-    PaceCalculatorController.$inject = ['$log'];
+    PaceCalculatorController.$inject = ['$http', '$log'];
 })();
