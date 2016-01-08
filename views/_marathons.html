@@ -1,4 +1,4 @@
-<div class="row" ng-controller="MarathonsController as vm">
+<div class="row top5" ng-controller="MarathonsController as vm">
     <div class="col-md-9">
         <table class="table table-bordered">
             <tr ng-repeat="marathon in vm.marathons" ng-class="{'bg-success': marathon.future, 'bg-danger': !marathon.future}" ng-click="vm.getWeather(marathon)">

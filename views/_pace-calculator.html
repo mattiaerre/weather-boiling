@@ -1,10 +1,17 @@
-<div class="row" ng-controller="PaceCalculatorController as vm">
-    <div class="col-md-12">
-        <input type="number" min="2" max="10" step="1" ng-model="vm.minutes" ng-change="vm.toKph()">:
-        <input type="number" type="number" min="0" max="59" step="1" ng-model="vm.seconds" ng-change="vm.toKph()">
-        min/km
-        <strong>{{vm.kph}}</strong>
-        kph
+<div ng-controller="PaceCalculatorController as vm">
+    <div class="row top5">
+        <div class="col-md-12">
+            <input type="number" min="2" max="10" step="1" ng-model="vm.minutes" ng-change="vm.toSpeed()">:
+            <input type="number" type="number" min="0" max="59" step="1" ng-model="vm.seconds" ng-change="vm.toSpeed()"> min/km
+            <strong>{{vm.kph}}</strong> kph
+            <strong>{{vm.mph}}</strong> mph
+        </div>
+    </div>
+    <div class="row top5">
+        <div class="col-md-12">
+            <input type="number" type="number" min="0" max="59" step="1" ng-model="vm.kilometers" ng-change="vm.toMiles()"> kilometers
+            <strong>{{vm.miles}}</strong> miles
+        </div>
     </div>
 </div>
 <script src="javascripts/pace-calculator/pace-calculator.controller.js"></script>
