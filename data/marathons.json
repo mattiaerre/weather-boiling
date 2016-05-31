@@ -56,5 +56,14 @@
             "city": "Madrid",
             "website": "TODO"
         }
+    },
+    {
+        "id": "valencia-2016",
+        "when": "20/11/2016",
+        "info": {
+            "name": "TODO",
+            "city": "Valencia",
+            "website": "TODO"
+        }
     }
 ]
