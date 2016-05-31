@@ -13,7 +13,7 @@ router.get('/', function (req, res, next) {
     client.stream('statuses/filter', { track: req.query.track }, function (stream) {
         stream.on('data', function (tweet) {
             console.log(tweet.text);
-            
+
             // destroy stream after 10"
             var timeoutId = setTimeout(function () {
                 console.log('info: stream.destroy()');

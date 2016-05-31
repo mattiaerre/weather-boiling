@@ -35,7 +35,7 @@ function PaceCalculatorController($http, $log) {
     function toMiles() {
         var miles = vm.kilometers * 0.621371;
         vm.miles = Math.round(miles * 100) / 100;
-        
+
         $log.info('kilometers: [' + vm.kilometers + '] miles: [' + vm.miles + ']');
     }
 
