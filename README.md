@@ -1,3 +1,3 @@
-#åweather-boiling#
+#weather-boiling#
 
 weather-boiling

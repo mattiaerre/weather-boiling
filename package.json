@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "private": true,
   "scripts": {
-    "nodemon": "nodemon ./bin/www",
+    "nodemon": "DEBUG=weather-boiling:server nodemon ./bin/www",
     "start": "node ./bin/www"
   },
   "dependencies": {
