@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function (req, res, next) {
-    var defaults = { minutes: 5, seconds: 48 };
+    var defaults = { minutes: 4, seconds: 26 };
     if (req.cookies.paceCalculatorDefaults) {
         defaults.minutes = req.cookies.paceCalculatorDefaults.minutes;
         defaults.seconds = req.cookies.paceCalculatorDefaults.seconds;
