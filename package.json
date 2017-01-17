@@ -1,6 +1,6 @@
 {
   "name": "weather-boiling",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "nodemon": "DEBUG=weather-boiling:server nodemon ./bin/www",
