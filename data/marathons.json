@@ -58,12 +58,12 @@
         }
     },
     {
-        "id": "valencia-2016",
-        "when": "20/11/2016",
+        "id": "weott-2017",
+        "when": "07/05/2017",
         "info": {
-            "name": "TODO",
-            "city": "Valencia",
-            "website": "TODO"
+            "name": "Avenue of the Giants Marathon",
+            "city": "Weott",
+            "website": "http://www.theave.org/"
         }
     }
 ]
