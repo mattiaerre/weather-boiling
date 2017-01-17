@@ -1,6 +1,7 @@
 {
   "name": "weather-boiling",
   "version": "0.2.0",
+  "description": "My marathons and wanna be training pace calculator web app",
   "private": true,
   "scripts": {
     "nodemon": "DEBUG=weather-boiling:server nodemon ./bin/www",
