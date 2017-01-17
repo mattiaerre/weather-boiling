@@ -5,5 +5,9 @@
   },
   "globals": {
     "moment": true
-  }
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ]
 }
