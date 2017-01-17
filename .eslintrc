@@ -1,3 +1,9 @@
 {
-  "extends": "opentable"
+  "extends": "opentable",
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "moment": true
+  }
 }

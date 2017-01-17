@@ -1,8 +1,7 @@
-(function (moment) {
-  if (!moment)
-    return;
+((moment) => {
+  if (!moment) { return; }
 
-  var when = moment('30/01/2013', 'DD/MM/YYYY');
-  var movedToLondon = document.getElementById('moved-to-london');
-  movedToLondon.innerHTML = when.fromNow() + ' - ';
+  const movedToLondon = document.getElementById('moved-to-london');
+  const when = moment('30/01/2013', 'DD/MM/YYYY');
+  movedToLondon.innerHTML = `${when.fromNow()} - `;
 })(moment);
