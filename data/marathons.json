@@ -65,5 +65,14 @@
             "city": "Weott",
             "website": "http://www.theave.org/"
         }
+    },
+    {
+        "id": "las-vegas-2017",
+        "when": "12/11/2017",
+        "info": {
+            "name": "Rock 'n' Roll Las Vegas Marathon",
+            "city": "Las Vegas",
+            "website": "http://www.runrocknroll.com/las-vegas/"
+        }
     }
 ]
